@@ -1,0 +1,47 @@
+High Level Test Cases for Pet service
+
+Add new pet to store
+1. New pet is added
+2. Pet with duplicated ID is not saved
+3. Pet is not saved when contains invalid data
+4. Pet is not saved when required fields are missing
+
+Update an existing pet
+1. Pet data is updated
+2. Pet data is not updated when contains invalid data
+3. Pet data is not updated when required fields are missing
+4. No new pet is saved when pet ID is not found
+
+Finds Pets by Status
+1. Pets with available status are returned by default when no param is provided
+2. Pets with the specified status are returned when using a single param
+3. Pets with the specified status are returned when using multiple params
+4. Deleted pets are not returned when finding pets by status
+
+Finds Pets by tags
+1. Pets with the specified tag are returned when using a single filtering criteria
+2. Pets with the specified tags are returned when using multiple filtering criteria
+3. Tags param is mandatory for finding pets by tag
+4. Deleted pets are not returned when finding pets by tag
+
+Find Pet by ID
+1. Pet data is returned when finding by Id
+2. No pet data is returned when invalid Id is provided
+3. No pet data is returned when unexisting Id is provided
+
+Updates a pet with form data
+1. Pet's Name and Status are updated
+2. Pet's Name only is updated when no Status is provided
+3. Pet's Status only is updated when no Name is provided
+4. No data is modified when no params is provided
+
+Deletes a pet
+1. Existing pet is deleted
+2. Proper message is returned when invalid Id is provided
+3. Proper message is returned when unexisting Id is provided
+
+Uploads an image
+1. Add image for an existing pet
+2. Proper message is returned when invalid Id is provided
+3. Proper message is returned when unexisting Id is provided
+4. Proper message is returned when invalid file type is provided

@@ -14,7 +14,7 @@ API under test:  Swagger Petstore - OpenAPI 3.0 http://localhost:8080/
 4. Automate the proposed test cases.
 5. Provide a brief explanation of the solution you have implemented.
 
-Note: ONLY THE TEST FOR ADD PETS have been automated because setting up the project structure and good practices takes some additional time. 
+Note: ONLY THE TEST FOR ADD PETS have been automated because setting up the project structure and good practices takes some additional time, also because I didn't work with this tech stack for a while. (I had to get updated with few tools) 
 ### 2. API performance test ❌
 Unable to complete this due to lack of experience in this area (tried to make it done following some guidances but it couldn't finish in a good job worthy to be sent)
 
@@ -25,7 +25,7 @@ Unable to complete this due to lack of experience in this area (tried to make it
 ### Tests Cases
 The high level test case are written in: `/src/test/resources/manualTestCases/hltc-pets.txt`
 
-I consider that all of them should be automated but due to the limited time only the test for creating pets have been automated.
+I think that all of them should be automated but due to the limited time only the test for creating pets have been automated.
 
 ### The project directory structure (Screenplay pattern)
 The project applies Screenplay pattern, so the project has the following structure in order to do that:
@@ -39,7 +39,7 @@ src
         + tasks                        Tasks that actors can perform. They are called from step definition
         + questions                    Question classes that are used to validate the data
         + stepdefinitions              Step definitions
-        + helper                       Util and common functions
+        + helper                       Util and common methods
     + resources
       + features                       Feature files
 ```

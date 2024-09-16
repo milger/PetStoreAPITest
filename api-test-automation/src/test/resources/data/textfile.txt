@@ -1,0 +1,1 @@
+Negative test for uploading pet image files.
